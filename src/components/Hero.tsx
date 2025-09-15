@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail, Download } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
+import Prism from "@/components/Prism";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -122,38 +123,82 @@ const Hero = () => {
             </motion.div>
           </motion.div>
 
-          {/* Animated Code Block */}
+          {/* 3D Prism Animation */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="hidden lg:block"
+            className="hidden lg:block relative"
           >
-            <div className="card-gradient p-6 font-mono text-sm">
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                <span className="text-muted-foreground ml-2">ritesh-portfolio.js</span>
+            <div className="relative w-full h-[500px] rounded-xl overflow-hidden">
+              {/* Prism Animation Container */}
+              <div className="absolute inset-0 pointer-events-none">
+                <Prism
+                  animationType="rotate"
+                  timeScale={0.3}
+                  height={3.5}
+                  baseWidth={5.5}
+                  scale={2.8}
+                  hueShift={0.2}
+                  colorFrequency={0.8}
+                  noise={0.3}
+                  glow={1.2}
+                  bloom={1.5}
+                  transparent={true}
+                  suspendWhenOffscreen={true}
+                />
               </div>
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1, duration: 1.5 }}
-              >
-                <div className="text-primary">const</div>{" "}
-                <div className="text-foreground">developer = {`{`}</div>
-                <div className="ml-4 text-muted-foreground">name: <span className="text-green-400">'Ritesh Pawar'</span>,</div>
-                <div className="ml-4 text-muted-foreground">role: <span className="text-green-400">'Full Stack Developer'</span>,</div>
-                <div className="ml-4 text-muted-foreground">skills: <span className="text-yellow-400">[</span></div>
-                <div className="ml-8 text-green-400">'React.js', 'Node.js',</div>
-                <div className="ml-8 text-green-400">'AWS', 'Python', 'MongoDB'</div>
-                <div className="ml-4 text-yellow-400">],</div>
-                <div className="ml-4 text-muted-foreground">experience: <span className="text-blue-400">'2+ years'</span>,</div>
-                <div className="ml-4 text-muted-foreground">passion: <span className="text-green-400">'Building innovative solutions'</span></div>
-                <div className="text-foreground">{`}`};</div>
-              </motion.div>
+              
+              {/* Overlay Code Block */}
+              <div className="relative z-10 card-gradient p-6 font-mono text-sm backdrop-blur-sm bg-background/20 border border-primary/10">
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                  <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                  <span className="text-muted-foreground ml-2">ritesh-portfolio.js</span>
+                </div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 1, duration: 1.5 }}
+                >
+                  <div className="text-primary">const</div>{" "}
+                  <div className="text-foreground">developer = {`{`}</div>
+                  <div className="ml-4 text-muted-foreground">name: <span className="text-green-400">'Ritesh Pawar'</span>,</div>
+                  <div className="ml-4 text-muted-foreground">role: <span className="text-green-400">'Full Stack Developer'</span>,</div>
+                  <div className="ml-4 text-muted-foreground">skills: <span className="text-yellow-400">[</span></div>
+                  <div className="ml-8 text-green-400">'React.js', 'Node.js',</div>
+                  <div className="ml-8 text-green-400">'AWS', 'Python', 'MongoDB'</div>
+                  <div className="ml-4 text-yellow-400">],</div>
+                  <div className="ml-4 text-muted-foreground">experience: <span className="text-blue-400">'2+ years'</span>,</div>
+                  <div className="ml-4 text-muted-foreforeground">passion: <span className="text-green-400">'Building innovative solutions'</span></div>
+                  <div className="text-foreground">{`}`};</div>
+                </motion.div>
+              </div>
             </div>
+          </motion.div>
+          
+          {/* Mobile 3D Animation */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="lg:hidden relative w-full h-[300px] rounded-xl overflow-hidden mt-8"
+          >
+            <Prism
+              animationType="rotate"
+              timeScale={0.2}
+              height={2.5}
+              baseWidth={4}
+              scale={2.2}
+              hueShift={0.15}
+              colorFrequency={0.6}
+              noise={0.2}
+              glow={0.8}
+              bloom={1.2}
+              transparent={true}
+              suspendWhenOffscreen={true}
+            />
           </motion.div>
         </div>
       </div>
