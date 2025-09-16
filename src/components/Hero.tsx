@@ -81,7 +81,7 @@ const Hero = () => {
           }} transition={{
             delay: 0.4,
             duration: 0.6
-          }} className="text-lg text-muted-foreground mb-8 max-w-lg leading-relaxed">Proeficient Computer Engineering graduate with expertise in web applications, backend development, and data visualization. Building innovative solutions with React.js, Node.js, and AWS.</motion.p>
+          }} className="text-lg text-muted-foreground mb-8 max-w-lg leading-relaxed">Proficient Computer Engineering graduate with expertise in web applications, backend development, and data visualization. Building innovative solutions with React.js, Node.js, and AWS.</motion.p>
 
             <motion.div initial={{
             opacity: 0,
