@@ -69,9 +69,7 @@ const Hero = () => {
                 <span className="text-gradient">Ritesh</span>{" "}
                 <span className="text-foreground">Pawar</span>
               </h1>
-              <h2 className="text-2xl lg:text-3xl text-muted-foreground font-light mb-6">
-                Full Stack Developer & Cloud Solutions Architect
-              </h2>
+              <h2 className="text-2xl lg:text-3xl text-muted-foreground font-light mb-6">Software Developer & AI Generalist</h2>
             </motion.div>
 
             <motion.p initial={{
@@ -83,10 +81,7 @@ const Hero = () => {
           }} transition={{
             delay: 0.4,
             duration: 0.6
-          }} className="text-lg text-muted-foreground mb-8 max-w-lg leading-relaxed">
-              Computer Engineering graduate with expertise in web applications, backend development, 
-              and data visualization. Building innovative solutions with React.js, Node.js, and AWS.
-            </motion.p>
+          }} className="text-lg text-muted-foreground mb-8 max-w-lg leading-relaxed">Proeficient Computer Engineering graduate with expertise in web applications, backend development, and data visualization. Building innovative solutions with React.js, Node.js, and AWS.</motion.p>
 
             <motion.div initial={{
             opacity: 0,
