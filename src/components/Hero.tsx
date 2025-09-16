@@ -4,6 +4,7 @@ import { ArrowDown, Github, Linkedin, Mail, Download } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
 import Prism from "@/components/Prism";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import RotatingText from "@/components/RotatingText";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -176,13 +177,63 @@ const Hero = () => {
                   <div className="text-primary">const</div>{" "}
                   <div className="text-foreground">developer = {`{`}</div>
                   <div className="ml-4 text-muted-foreground">name: <span className="text-green-400">'Ritesh Pawar'</span>,</div>
-                  <div className="ml-4 text-muted-foreground">role: <span className="text-green-400">'Full Stack Developer'</span>,</div>
+                  <div className="ml-4 text-muted-foreground">role: <span className="text-green-400">'</span>
+                    <RotatingText
+                      texts={['Full Stack Developer', 'React Developer', 'Node.js Expert', 'Cloud Architect']}
+                      mainClassName="text-green-400 inline-block"
+                      staggerFrom="last"
+                      initial={{ y: "100%" }}
+                      animate={{ y: 0 }}
+                      exit={{ y: "-120%" }}
+                      staggerDuration={0.02}
+                      splitLevelClassName="overflow-hidden"
+                      transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                      rotationInterval={2500}
+                    />
+                    <span className="text-green-400">'</span>,</div>
                   <div className="ml-4 text-muted-foreground">skills: <span className="text-yellow-400">[</span></div>
-                  <div className="ml-8 text-green-400">'React.js', 'Node.js',</div>
-                  <div className="ml-8 text-green-400">'AWS', 'Python', 'MongoDB'</div>
+                  <div className="ml-8">
+                    <RotatingText
+                      texts={['React.js', 'Node.js', 'TypeScript', 'Python', 'AWS', 'MongoDB', 'Next.js', 'Express']}
+                      mainClassName="text-green-400 inline-block"
+                      staggerFrom="first"
+                      initial={{ y: "100%" }}
+                      animate={{ y: 0 }}
+                      exit={{ y: "-120%" }}
+                      staggerDuration={0.03}
+                      splitLevelClassName="overflow-hidden"
+                      transition={{ type: "spring", damping: 25, stiffness: 350 }}
+                      rotationInterval={2000}
+                    />, 
+                    <RotatingText
+                      texts={['Docker', 'GraphQL', 'Redis', 'PostgreSQL', 'Tailwind', 'Framer Motion']}
+                      mainClassName="text-green-400 inline-block ml-1"
+                      staggerFrom="center"
+                      initial={{ y: "100%" }}
+                      animate={{ y: 0 }}
+                      exit={{ y: "-120%" }}
+                      staggerDuration={0.025}
+                      splitLevelClassName="overflow-hidden"
+                      transition={{ type: "spring", damping: 28, stiffness: 380 }}
+                      rotationInterval={2200}
+                    />
+                  </div>
                   <div className="ml-4 text-yellow-400">],</div>
                   <div className="ml-4 text-muted-foreground">experience: <span className="text-blue-400">'2+ years'</span>,</div>
-                  <div className="ml-4 text-muted-foreforeground">passion: <span className="text-green-400">'Building innovative solutions'</span></div>
+                  <div className="ml-4 text-muted-foreground">passion: <span className="text-green-400">'</span>
+                    <RotatingText
+                      texts={['Building innovative solutions', 'Creating amazing experiences', 'Solving complex problems', 'Crafting beautiful interfaces']}
+                      mainClassName="text-green-400 inline-block"
+                      staggerFrom="random"
+                      initial={{ y: "100%" }}
+                      animate={{ y: 0 }}
+                      exit={{ y: "-120%" }}
+                      staggerDuration={0.015}
+                      splitLevelClassName="overflow-hidden"
+                      transition={{ type: "spring", damping: 35, stiffness: 450 }}
+                      rotationInterval={3000}
+                    />
+                    <span className="text-green-400">'</span></div>
                   <div className="text-foreground">{`}`};</div>
                 </motion.div>
               </div>
