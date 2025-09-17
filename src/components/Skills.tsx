@@ -139,33 +139,93 @@ const Skills = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-20"
         >
-          <h3 className="text-3xl font-bold text-center mb-12">
-            <span className="text-gradient">Certifications</span>
-          </h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+          <div className="text-center mb-16">
+            <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+              <span className="text-gradient">Certifications</span>
+            </h3>
+            <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto mb-4">
+              Professional certifications that validate my expertise in modern technologies
+            </p>
+            <div className="w-16 h-1 bg-gradient-to-r from-primary to-primary-glow mx-auto rounded-full"></div>
+          </div>
+
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-8">
             {[
-              "AWS Solutions Architect Associate",
-              "Web Development Bootcamp (Udemy)",
-              "Oracle Cloud Infrastructure 2023",
-              "Fortinet Cybersecurity Foundation"
+              {
+                title: "AWS Solutions Architect Associate",
+                issuer: "Amazon Web Services",
+                year: "2024",
+                description: "Cloud architecture and infrastructure design",
+                color: "from-orange-500/20 to-red-500/20",
+                iconColor: "text-orange-500"
+              },
+              {
+                title: "Web Development Bootcamp",
+                issuer: "Udemy",
+                year: "2023",
+                description: "Full-stack web development and modern frameworks",
+                color: "from-purple-500/20 to-pink-500/20",
+                iconColor: "text-purple-500"
+              },
+              {
+                title: "Oracle Cloud Infrastructure",
+                issuer: "Oracle",
+                year: "2023",
+                description: "Cloud computing and database management",
+                color: "from-cyan-500/20 to-blue-500/20",
+                iconColor: "text-cyan-500"
+              }
             ].map((cert, index) => (
               <motion.div
-                key={cert}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+                key={cert.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
-                className="card-gradient p-6 text-center card-hover"
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className={`card-gradient card-hover p-8 relative overflow-hidden bg-gradient-to-br ${cert.color}`}
               >
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
+                <div className="relative z-10">
+                  <div className="w-16 h-16 bg-gradient-to-br from-background/20 to-background/10 rounded-2xl flex items-center justify-center mb-6 backdrop-blur-sm border border-white/10">
+                    <svg className={`w-8 h-8 ${cert.iconColor}`} fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+
+                  <h4 className="text-xl font-bold text-foreground mb-2 leading-tight">
+                    {cert.title}
+                  </h4>
+                  
+                  <p className="text-primary font-semibold mb-1">
+                    {cert.issuer}
+                  </p>
+                  
+                  <p className="text-sm text-muted-foreground mb-4">
+                    {cert.year}
+                  </p>
+                  
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {cert.description}
+                  </p>
                 </div>
-                <p className="text-sm font-medium text-foreground">{cert}</p>
+
+                {/* Background decoration */}
+                <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-primary/10 to-transparent rounded-full blur-2xl"></div>
               </motion.div>
             ))}
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            className="text-center"
+          >
+            <div className="flex items-center justify-center gap-3 text-sm text-muted-foreground">
+              <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+              <p>Continuously learning and staying updated with industry standards</p>
+            </div>
+          </motion.div>
         </motion.div>
       </div>
     </section>
