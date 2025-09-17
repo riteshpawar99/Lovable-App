@@ -35,17 +35,17 @@ const About = () => {
       }} transition={{
         duration: 0.6
       }} className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
             About <span className="text-gradient">Me</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             I'm a proficient Computer Engineering graduate with expertise in web applications, 
             backend development and data visualization tools and analysis. Adept at building 
             backend architectures with efficient APIs and analyzing data for valuable insights.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content */}
           <motion.div initial={{
           opacity: 0,
@@ -106,7 +106,7 @@ const About = () => {
         }} transition={{
           duration: 0.6,
           delay: 0.4
-        }} className="grid grid-cols-2 gap-6">
+        }} className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             {stats.map((stat, index) => <motion.div key={stat.label} initial={{
             opacity: 0,
             y: 20

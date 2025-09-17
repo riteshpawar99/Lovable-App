@@ -65,11 +65,11 @@ const Hero = () => {
             duration: 0.6
           }} className="mb-6">
               <span className="text-primary font-medium text-lg mb-2 block">Hello, I'm</span>
-              <h1 className="text-5xl lg:text-7xl font-bold mb-4 leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-4 leading-tight">
                 <span className="text-gradient">Ritesh</span>{" "}
                 <span className="text-foreground">Pawar</span>
               </h1>
-              <h2 className="text-2xl lg:text-3xl text-muted-foreground font-light mb-6">Software Developer & AI Generalist</h2>
+              <h2 className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground font-light mb-6">Software Developer & AI Generalist</h2>
             </motion.div>
 
             <motion.p initial={{
@@ -81,7 +81,7 @@ const Hero = () => {
           }} transition={{
             delay: 0.4,
             duration: 0.6
-          }} className="text-lg text-muted-foreground mb-8 max-w-lg leading-relaxed">Proficient Computer Engineering graduate with expertise in web applications, backend development, and data visualization. Building innovative solutions with React.js, Node.js, and AWS.</motion.p>
+          }} className="text-base sm:text-lg text-muted-foreground mb-8 max-w-lg leading-relaxed">Proficient Computer Engineering graduate with expertise in web applications, backend development, and data visualization. Building innovative solutions with React.js, Node.js, and AWS.</motion.p>
 
             <motion.div initial={{
             opacity: 0,
@@ -92,19 +92,19 @@ const Hero = () => {
           }} transition={{
             delay: 0.6,
             duration: 0.6
-          }} className="flex flex-wrap gap-4 mb-8">
-              <Button className="btn-hero" onClick={() => scrollToSection("projects")}>
+          }} className="flex flex-col sm:flex-row flex-wrap gap-4 mb-8">
+              <Button className="btn-hero flex-1 sm:flex-none" onClick={() => scrollToSection("projects")}>
                 View My Work
                 <ArrowDown className="ml-2 h-4 w-4" />
               </Button>
-              <Button variant="outline" className="btn-ghost" onClick={() => scrollToSection("contact")}>
+              <Button variant="outline" className="btn-ghost flex-1 sm:flex-none" onClick={() => scrollToSection("contact")}>
                 <Mail className="mr-2 h-4 w-4" />
                 Get In Touch
               </Button>
-              <Button variant="secondary" asChild className="hover:bg-primary/10">
-                <a href="/resume.pdf" download="Ritesh_Pawar_Resume.pdf" className="px-0 py-0 mx-0">
+              <Button variant="secondary" asChild className="hover:bg-primary/10 flex-1 sm:flex-none">
+                <a href="/resume.pdf" download="Ritesh_Pawar_Resume.pdf" className="flex items-center justify-center">
                   <Download className="mr-2 h-4 w-4" />
-                  Download Resume
+                  Resume Download
                 </a>
               </Button>
             </motion.div>
@@ -156,7 +156,7 @@ const Hero = () => {
               </div>
               
               {/* Overlay Code Block */}
-              <div className="relative z-10 card-gradient p-6 font-mono text-sm backdrop-blur-sm border border-primary/10 bg-gray-700 rounded-xl py-[24px] my-[100px] mx-[18px]">
+              <div className="relative z-10 card-gradient p-4 sm:p-6 font-mono text-xs sm:text-sm backdrop-blur-sm border border-primary/10 bg-gray-700 rounded-xl py-[16px] sm:py-[24px] my-[60px] sm:my-[100px] mx-[12px] sm:mx-[18px]">
                 <div className="flex items-center gap-2 mb-4">
                   <div className="w-3 h-3 bg-red-500 rounded-full"></div>
                   <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
