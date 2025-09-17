@@ -1,0 +1,105 @@
+%PDF-1.4
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R]
+/Count 1
+>>
+endobj
+
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 4 0 R
+/Resources <<
+/Font <<
+/F1 5 0 R
+>>
+>>
+>>
+endobj
+
+4 0 obj
+<<
+/Length 500
+>>
+stream
+BT
+/F1 24 Tf
+50 750 Td
+(RITESH PAWAR) Tj
+0 -30 Td
+/F1 16 Tf
+(Data Analyst & Full Stack Developer) Tj
+0 -40 Td
+/F1 12 Tf
+(Email: riteshpawar754@gmail.com) Tj
+0 -20 Td
+(Phone: +91-XXXXXXXXXX) Tj
+0 -20 Td
+(LinkedIn: linkedin.com/riteshpawar) Tj
+0 -20 Td
+(GitHub: github.com/riteshpawar99) Tj
+0 -40 Td
+/F1 14 Tf
+(EXPERIENCE) Tj
+0 -25 Td
+/F1 12 Tf
+(Data Analyst - Slick Insights (Current)) Tj
+0 -15 Td
+(• Analyzing complex datasets for business insights) Tj
+0 -15 Td
+(• Building interactive dashboards and visualizations) Tj
+0 -15 Td
+(• Implementing data pipelines and automation) Tj
+0 -30 Td
+(Software Development Intern - Prodigy Infotech) Tj
+0 -15 Td
+(• Built feedback classifier using OpenAI and scikit-learn) Tj
+0 -15 Td
+(• Deployed on AWS EC2 with S3 storage) Tj
+0 -40 Td
+/F1 14 Tf
+(EDUCATION) Tj
+0 -25 Td
+/F1 12 Tf
+(B.Tech Computer Engineering - Sandip University (8.10 CGPA)) Tj
+0 -15 Td
+(Diploma Computer Engineering - MET Bhujbal Knowledge City (83.37%)) Tj
+ET
+endstream
+endobj
+
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+
+xref
+0 6
+0000000000 65535 f 
+0000000010 00000 n 
+0000000060 00000 n 
+0000000117 00000 n 
+0000000267 00000 n 
+0000000819 00000 n 
+trailer
+<<
+/Size 6
+/Root 1 0 R
+>>
+startxref
+886
+%%EOF

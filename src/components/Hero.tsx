@@ -101,6 +101,12 @@ const Hero = () => {
                 <Mail className="mr-2 h-4 w-4" />
                 Get In Touch
               </Button>
+              <Button variant="secondary" asChild className="hover:bg-primary/10">
+                <a href="/resume.pdf" download="Ritesh_Pawar_Resume.pdf">
+                  <Download className="mr-2 h-4 w-4" />
+                  Download Resume
+                </a>
+              </Button>
             </motion.div>
 
             {/* Social Links */}

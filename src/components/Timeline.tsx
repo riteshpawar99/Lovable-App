@@ -5,14 +5,24 @@ const Timeline = () => {
     id: 1,
     type: "work",
     icon: Briefcase,
+    title: "Data Analyst",
+    company: "Slick Insights",
+    period: "Present",
+    description: "Analyzing complex datasets to extract actionable insights for business decision-making. Building interactive dashboards and data visualization tools using Python, SQL, and modern BI platforms. Implementing data pipelines and automating reporting processes.",
+    skills: ["Python", "SQL", "Power BI", "Tableau", "Data Visualization", "Statistical Analysis"],
+    isOngoing: true
+  }, {
+    id: 2,
+    type: "work",
+    icon: Briefcase,
     title: "Internship Trainee",
     company: "QSpiders Software Testing",
     period: "Jan 2025 - July 2025",
     description: "Developing RESTful APIs in Node.js and Express within microservices setup. Optimized database queries and indexing strategies in MySQL, reducing API response time by 40%. Contributing to Agile SCRUM team processes.",
     skills: ["Node.js", "Express.js", "MySQL", "Microservices", "Agile SCRUM"],
-    isOngoing: true
+    isOngoing: false
   }, {
-    id: 2,
+    id: 3,
     type: "work",
     icon: Code,
     title: "Software Development Intern",
@@ -22,7 +32,7 @@ const Timeline = () => {
     skills: ["OpenAI", "Flask", "AWS EC2", "S3", "scikit-learn"],
     isOngoing: false
   }, {
-    id: 3,
+    id: 4,
     type: "education",
     icon: GraduationCap,
     title: "Bachelor of Technology",
@@ -32,7 +42,7 @@ const Timeline = () => {
     skills: ["Data Structures", "Algorithms", "Software Engineering", "Database Systems"],
     isOngoing: true
   }, {
-    id: 4,
+    id: 5,
     type: "education",
     icon: Trophy,
     title: "Diploma in Computer Engineering",
