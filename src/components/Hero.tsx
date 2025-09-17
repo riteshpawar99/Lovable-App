@@ -149,14 +149,14 @@ const Hero = () => {
           duration: 0.8,
           delay: 0.3
         }} className="hidden lg:block relative">
-            <div className="relative w-full h-[500px] overflow-hidden rounded-lg">
+            <div className="relative w-full h-[500px] overflow-hidden rounded-lg mx-0">
               {/* Prism Animation Container */}
               <div className="absolute inset-0 pointer-events-none">
                 <Prism animationType="rotate" timeScale={0.3} height={3.5} baseWidth={5.5} scale={2.8} hueShift={0.2} colorFrequency={0.8} noise={0.3} glow={1.2} bloom={1.5} transparent={true} suspendWhenOffscreen={true} />
               </div>
               
               {/* Overlay Code Block */}
-              <div className="relative z-10 card-gradient p-6 font-mono text-sm backdrop-blur-sm border border-primary/10 bg-gray-700 rounded-xl">
+              <div className="relative z-10 card-gradient p-6 font-mono text-sm backdrop-blur-sm border border-primary/10 bg-gray-700 rounded-xl py-[24px] mx-[10px] my-[100px]">
                 <div className="flex items-center gap-2 mb-4">
                   <div className="w-3 h-3 bg-red-500 rounded-full"></div>
                   <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
