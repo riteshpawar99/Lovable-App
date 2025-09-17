@@ -102,7 +102,7 @@ const Hero = () => {
                 Get In Touch
               </Button>
               <Button variant="secondary" asChild className="hover:bg-primary/10">
-                <a href="/resume.pdf" download="Ritesh_Pawar_Resume.pdf" className="mx-[80px] px-0 py-0">
+                <a href="/resume.pdf" download="Ritesh_Pawar_Resume.pdf" className="px-0 py-0 mx-0">
                   <Download className="mr-2 h-4 w-4" />
                   Download Resume
                 </a>
