@@ -156,7 +156,7 @@ const Hero = () => {
               </div>
               
               {/* Overlay Code Block */}
-              <div className="relative z-10 card-gradient p-6 font-mono text-sm backdrop-blur-sm border border-primary/10 bg-gray-700 rounded-xl py-[24px] mx-[10px] my-[100px]">
+              <div className="relative z-10 card-gradient p-6 font-mono text-sm backdrop-blur-sm border border-primary/10 bg-gray-700 rounded-xl py-[24px] my-[100px] mx-[18px]">
                 <div className="flex items-center gap-2 mb-4">
                   <div className="w-3 h-3 bg-red-500 rounded-full"></div>
                   <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
