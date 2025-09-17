@@ -102,7 +102,7 @@ const Hero = () => {
                 Get In Touch
               </Button>
               <Button variant="secondary" asChild className="hover:bg-primary/10">
-                <a href="/resume.pdf" download="Ritesh_Pawar_Resume.pdf">
+                <a href="/resume.pdf" download="Ritesh_Pawar_Resume.pdf" className="mx-[80px] px-0 py-0">
                   <Download className="mr-2 h-4 w-4" />
                   Download Resume
                 </a>
@@ -149,7 +149,7 @@ const Hero = () => {
           duration: 0.8,
           delay: 0.3
         }} className="hidden lg:block relative">
-            <div className="relative w-full h-[500px] overflow-hidden rounded-lg mx-0">
+            <div className="relative w-full h-[500px] overflow-hidden mx-0 my-0 py-0 rounded-lg">
               {/* Prism Animation Container */}
               <div className="absolute inset-0 pointer-events-none">
                 <Prism animationType="rotate" timeScale={0.3} height={3.5} baseWidth={5.5} scale={2.8} hueShift={0.2} colorFrequency={0.8} noise={0.3} glow={1.2} bloom={1.5} transparent={true} suspendWhenOffscreen={true} />
