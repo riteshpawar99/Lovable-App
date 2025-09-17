@@ -27,9 +27,7 @@ const Footer = () => {
             <h3 className="text-2xl font-bold text-gradient mb-2">
               Ritesh Pawar
             </h3>
-            <p className="text-muted-foreground text-sm">
-              Full Stack Developer & Cloud Solutions Architect
-            </p>
+            <p className="text-muted-foreground text-sm">Software Developer & AI Generalist</p>
           </motion.div>
 
           {/* Social Links */}
