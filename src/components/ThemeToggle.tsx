@@ -8,7 +8,7 @@ export function ThemeToggle() {
     setTheme,
     theme
   } = useTheme();
-  return <Button variant="ghost" size="lg" onClick={() => setTheme(theme === "light" ? "dark" : "light")} className="relative h-12 w-12 rounded-xl border border-border/50 bg-card/80 backdrop-blur-sm hover:bg-card/90 hover:border-primary/20 transition-all duration-300 text-sm">
+  return <Button variant="ghost" size="lg" onClick={() => setTheme(theme === "light" ? "dark" : "light")} className="relative h-12 w-12 rounded-xl border border-border/50 bg-card/80 backdrop-blur-sm hover:bg-card/90 hover:border-primary/20 transition-all duration-300 text-sm text-slate-700">
       <motion.div initial={false} animate={{
       scale: theme === "light" ? 1 : 0,
       opacity: theme === "light" ? 1 : 0,
