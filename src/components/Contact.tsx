@@ -70,7 +70,7 @@ const Contact = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            Get In <span className="text-gradient">Touch</span>
+            <span className="text-gradient">Get In Touch</span>
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
             Let's collaborate on something amazing! I'm always open to discussing new opportunities,

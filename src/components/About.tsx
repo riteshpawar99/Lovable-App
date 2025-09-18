@@ -36,7 +36,7 @@ const About = () => {
         duration: 0.6
       }} className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            About <span className="text-gradient">Me</span>
+            <span className="text-gradient">About Me</span>
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             I'm a proficient Computer Engineering graduate with expertise in web applications, 
@@ -61,7 +61,7 @@ const About = () => {
         }}>
             <div className="space-y-6">
               <div>
-                <h3 className="text-2xl font-semibold mb-4 text-primary">My Journey</h3>
+                <h3 className="text-2xl font-semibold mb-4"><span className="text-gradient">My Journey</span></h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">Currently completed Bachelor of Technology in Computer Engineering at Sandip University, Nashik, I've maintained a strong academic record with 8.64 CGPA while gaining practical experience through internships and personal projects.</p>
                 <p className="text-muted-foreground leading-relaxed">
                   Always committed to contributing innovative solutions with long-term value within teams. 

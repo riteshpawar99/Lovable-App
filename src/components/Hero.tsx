@@ -52,8 +52,7 @@ const Hero = () => {
           }} className="mb-6">
               <span className="text-primary font-medium text-lg mb-2 block">Hello, I'm</span>
               <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-4 leading-tight">
-                <span className="text-gradient">Ritesh</span>{" "}
-                <span className="text-foreground">Pawar</span>
+                <span className="text-gradient">Ritesh Pawar</span>
               </h1>
               <h2 className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground font-light mb-6">Software Developer & AI Generalist</h2>
             </motion.div>
@@ -85,7 +84,7 @@ const Hero = () => {
               </Button>
               <Button variant="outline" className="btn-ghost flex-1 sm:flex-none" onClick={() => scrollToSection("contact")}>
                 <Mail className="mr-2 h-4 w-4" />
-                Get In Touch
+                <span className="text-gradient">Get In Touch</span>
               </Button>
               <Button variant="secondary" asChild className="hover:bg-primary/10 flex-1 sm:flex-none">
                 <a href="/resume.pdf" download="Ritesh_Pawar_Resume.pdf" className="flex items-center justify-center">

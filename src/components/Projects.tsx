@@ -48,7 +48,7 @@ const Projects = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            Featured <span className="text-gradient">Projects</span>
+            <span className="text-gradient">Featured Projects</span>
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
             Here are some of my recent projects that showcase my skills in full-stack development,

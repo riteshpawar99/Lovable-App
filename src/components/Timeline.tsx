@@ -74,7 +74,7 @@ const Timeline = () => {
         duration: 0.6
       }} className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            My <span className="text-gradient">Journey</span>
+            <span className="text-gradient">My Journey</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             A timeline of my educational background, work experience, and professional growth 
@@ -152,7 +152,7 @@ const Timeline = () => {
         delay: 0.4
       }} className="mt-20">
           <h3 className="text-3xl font-bold text-center mb-12">
-            Key <span className="text-gradient">Strengths</span>
+            <span className="text-gradient">Key Strengths</span>
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {["Issue Resolving", "Team Work", "Effective Communication", "Critical Thinking", "Precise Observation", "Leadership", "Analytical Thinking", "Time Management", "Confidence"].map((strength, index) => <motion.div key={strength} initial={{
