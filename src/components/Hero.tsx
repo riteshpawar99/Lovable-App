@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail, Download } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
 import Prism from "@/components/Prism";
-import { ThemeToggle } from "@/components/ThemeToggle";
 import RotatingText from "@/components/RotatingText";
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -13,19 +12,6 @@ const Hero = () => {
     });
   };
   return <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-mesh">
-      {/* Theme Toggle - Fixed Position */}
-      <motion.div initial={{
-      opacity: 0,
-      y: -20
-    }} animate={{
-      opacity: 1,
-      y: 0
-    }} transition={{
-      delay: 0.5,
-      duration: 0.6
-    }} className="fixed top-6 right-6 z-50">
-        <ThemeToggle />
-      </motion.div>
 
       {/* Background Image */}
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" style={{
