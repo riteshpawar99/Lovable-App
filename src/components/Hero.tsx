@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail, Download } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
-import Prism from "@/components/Prism";
+import Orb from "@/components/Orb";
 import RotatingText from "@/components/RotatingText";
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -123,7 +123,7 @@ const Hero = () => {
             </motion.div>
           </motion.div>
 
-          {/* 3D Prism Animation */}
+          {/* 3D Orb Animation */}
           <motion.div initial={{
           opacity: 0,
           x: 50
@@ -135,9 +135,9 @@ const Hero = () => {
           delay: 0.3
         }} className="hidden lg:block relative">
             <div className="relative w-full h-[500px] overflow-hidden mx-0 my-0 py-0 rounded-lg">
-              {/* Prism Animation Container */}
+              {/* Orb Animation Container */}
               <div className="absolute inset-0 pointer-events-none">
-                <Prism animationType="rotate" timeScale={0.3} height={3.5} baseWidth={5.5} scale={2.8} hueShift={0.2} colorFrequency={0.8} noise={0.3} glow={1.2} bloom={1.5} transparent={true} suspendWhenOffscreen={true} />
+                <Orb hue={240} hoverIntensity={0.6} rotateOnHover={true} forceHoverState={false} />
               </div>
               
               {/* Overlay Code Block */}
@@ -229,7 +229,7 @@ const Hero = () => {
           duration: 0.8,
           delay: 0.5
         }} className="lg:hidden relative w-full h-[300px] rounded-xl overflow-hidden mt-8">
-            <Prism animationType="rotate" timeScale={0.2} height={2.5} baseWidth={4} scale={2.2} hueShift={0.15} colorFrequency={0.6} noise={0.2} glow={0.8} bloom={1.2} transparent={true} suspendWhenOffscreen={true} />
+            <Orb hue={240} hoverIntensity={0.4} rotateOnHover={true} forceHoverState={false} />
           </motion.div>
         </div>
       </div>
