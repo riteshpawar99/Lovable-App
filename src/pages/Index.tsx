@@ -7,12 +7,16 @@ import Skills from "@/components/Skills";
 import Timeline from "@/components/Timeline";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import Hyperspeed from "@/components/Hyperspeed";
+import { GradientBackground } from "@/components/GradientBackground";
 
 const Index = () => {
   return (
-    <div className="relative min-h-screen w-full">
-      <Hyperspeed />
+    <GradientBackground 
+      overlay={true} 
+      overlayOpacity={0.7}
+      animationDuration={12}
+      className="relative"
+    >
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -28,7 +32,7 @@ const Index = () => {
         <Contact />
         <Footer />
       </motion.div>
-    </div>
+    </GradientBackground>
   );
 };
 
