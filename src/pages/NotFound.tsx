@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
-import { GradientBackground } from "@/components/GradientBackground";
+import Hyperspeed from "@/components/Hyperspeed";
 
 const NotFound = () => {
   const location = useLocation();
@@ -10,12 +10,8 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <GradientBackground 
-      overlay={true} 
-      overlayOpacity={0.7}
-      animationDuration={12}
-      className="relative"
-    >
+    <div className="relative min-h-screen w-full">
+      <Hyperspeed />
       <div className="flex min-h-screen items-center justify-center relative z-10">
         <div className="text-center">
           <h1 className="mb-4 text-4xl font-bold text-white">404</h1>
@@ -25,7 +21,7 @@ const NotFound = () => {
           </a>
         </div>
       </div>
-    </GradientBackground>
+    </div>
   );
 };
 
