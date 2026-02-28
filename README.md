@@ -139,9 +139,8 @@ vercel deploy
 
 ## 👨‍💻 Author  
 
-**Developed by [Your Name]**  
-📧 Email: your.email@example.com  
-🔗 LinkedIn: [Your LinkedIn URL](https://www.linkedin.com/)  
+**Developed by [RITESSH PAWAR]**  
+📧 Email: riteshpawar754@gmail.com   
 
 ---
 
